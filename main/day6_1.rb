@@ -82,19 +82,11 @@ def counting_stars()
   count
 end
 
-def write_2d_list_to_file(list, file_path)
-  File.open(file_path, "w") do |file|
-    list.each do |row|
-      file.puts row.join("") # Join elements of the row with a space and write to the file
-    end
-  end
-end
-
 def main(file_path, file_output)
   start_point = locate_start_point()
   walk(start_point)
   puts counting_stars()+1 # +1 because the starting point is also a star
-  write_2d_list_to_file($list, file_output)
+  Util.write_2d_list_to_file($list, file_output)
 end
 
 main(file_path, file_output)

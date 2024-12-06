@@ -18,4 +18,12 @@ class Util
     end
     result
   end
+
+  def self.write_2d_list_to_file(list, file_path)
+    File.open(file_path, "w") do |file|
+      list.each do |row|
+        file.puts row.join("")
+      end
+    end
+  end
 end

@@ -92,7 +92,7 @@ def stepLeft(list,row, col)
 end
 
 def main()
-  list = Util.parse_letters_to_2d_array($file_path)
+  list = Util.parse_characters_to_2d_array($file_path)
   obstacle = 0
   start_point = locate_start_point(list)
 

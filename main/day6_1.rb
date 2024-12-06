@@ -3,7 +3,7 @@ require_relative "../util/util"
 file_path = "resource/day6.txt"
 file_output = "resource/day6_visited.txt"
 
-$list = Util.parse_letters_to_2d_array(file_path)
+$list = Util.parse_characters_to_2d_array(file_path)
 
 def locate_start_point()
   $list.each_with_index do |line, row_index|

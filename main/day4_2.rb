@@ -45,4 +45,4 @@ def x_shape_check(list, row_index, col_index)
   0
 end
 
-full_check(Util.parse_letters_to_2d_array(file_path))
+full_check(Util.parse_characters_to_2d_array(file_path))

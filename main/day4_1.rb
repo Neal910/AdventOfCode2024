@@ -101,4 +101,4 @@ def horizontal_check(line,col_index)
   count
 end
 
-full_check(Util.parse_letters_to_2d_array(file_path))
+full_check(Util.parse_characters_to_2d_array(file_path))
